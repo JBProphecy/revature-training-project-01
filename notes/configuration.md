@@ -2,6 +2,10 @@
 
 ---
 
+I created a folder for the project.
+
+---
+
 This command will create a file called `.python-version` in the root folder.
 
 ``` powershell
@@ -52,7 +56,13 @@ I created a folder called `notes` for notes.
 
 I created a file called `.gitignore`.
 
+I added some stuff to the `.gitignore` file.
+
 I created a file called `README.md`.
+
+I added some stuff to the `README.md` file.
+
+I added some notes in the `notes` folder.
 
 ---
 
@@ -79,3 +89,5 @@ git add .
 git commit -m "Fresh Start"
 git push -u origin master
 ```
+
+---
