@@ -34,7 +34,7 @@ The folder architecture should resemble the following.
 	- `__init__`
 	- `install-pyenv-win`
 
-I moved `pyenv-win` where I wanted it.
+I moved `pyenv-win` to where I wanted it.
 
 I created the following environment variables.
 
