@@ -1,7 +1,5 @@
 # **Installation**
 
-
-
 ---
 
 ## **Installing pyenv-win**
