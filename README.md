@@ -15,3 +15,9 @@
 
 
 ---
+
+## **New Branch Workflow**
+
+- run `pip install -r requirements.txt`
+
+---
