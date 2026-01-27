@@ -1,3 +1,11 @@
+# **Tests**
+
+---
+
+## **`pytest.ini`**
+
+- This file is `PyTest` configuration.
+
 ## **VS Code Resolve Imports in `tests` Folder**
 
 - hit `ctrl + shift + p`
@@ -10,5 +18,7 @@
 
 - `pytest` (without console logs)
 - `pytest -s` (with console logs)
+- `pytest --cov` (test and display coverage)
+- `pytest -s --cov` (test, show logs, display coverage)
 
 ---
