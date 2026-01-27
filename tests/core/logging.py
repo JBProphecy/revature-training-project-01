@@ -2,19 +2,14 @@
 
 import logging
 
+from app.core.environment import settings
 from logging.handlers import RotatingFileHandler
 
 ################################################################################################
 
-from app.core.environment import settings
-
-################################################################################################
-
-settings.log_directory_path.mkdir(exist_ok=True)
-
-################################################################################################
-
 def initialize():
+  settings.log_directory_path.mkdir(exist_ok=True)
+
   root_logger = logging.getLogger()
   root_logger.setLevel(logging.DEBUG)
 

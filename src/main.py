@@ -2,25 +2,18 @@
 
 import logging
 
-################################################################################################
-
 from app.core.logging import initialize
 
 ################################################################################################
+
+initialize()
 
 logger = logging.getLogger(__name__)
 
 ################################################################################################
 
-def configure():
-  logger.info("Configuring Application...") # This line will not actually log anything because the logger is configured below.
-  initialize()
-  logger.info("Application Configured!")
-
-################################################################################################
-
 def main():
-  configure()
+  logger.info("Application Started")
 
 ################################################################################################
 
