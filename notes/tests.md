@@ -6,6 +6,8 @@
 
 - This file is `PyTest` configuration.
 
+---
+
 ## **VS Code Resolve Imports in `tests` Folder**
 
 - hit `ctrl + shift + p`
