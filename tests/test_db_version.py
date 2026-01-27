@@ -1,19 +1,17 @@
 ################################################################################################
 
-from src.db import get_engine
+import logging
+
 from sqlalchemy import text
 
 ################################################################################################
 
-def test_connection():
-  engine = get_engine()
-  with engine.connect() as conn:
-    result = conn.execute(text("SELECT version();"))
-    print(f"Postgres Version is {result.fetchone()}")
+logger = logging.getLogger(__name__)
 
 ################################################################################################
 
-if __name__ == "__main__":
-  test_connection()
+def test_db_version(db_conn):
+  pass
+
 
 ################################################################################################
