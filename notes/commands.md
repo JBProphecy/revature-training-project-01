@@ -23,5 +23,7 @@ These are some useful commands.
 | `pip install -r requirements.txt` | to install the packages listed in `requirements.txt` |
 | `pip install <package_name>` | to install a package |
 | `pip uninstall <package_name>` | to uninstall a package |
+| `pytest` | to run tests |
+| `pytest -s` | to run tests and have console logs enabled |
 
 ---
