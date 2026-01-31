@@ -1,10 +1,8 @@
-# **Commands**
-
-These are some useful commands.
+# **Virtual Environment**
 
 ---
 
-## **Normal Environment**
+## **Normal Environment Commands**
 
 | Command | Purpose |
 | - | - |
@@ -12,7 +10,7 @@ These are some useful commands.
 
 ---
 
-## **Virtual Environment**
+## **Virtual Environment Commands**
 
 | Command | Purpose |
 | - | - |
