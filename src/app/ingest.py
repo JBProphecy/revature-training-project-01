@@ -15,4 +15,3 @@ rejected_df = raw_data[reject_tables_null].copy()
 valid_df = raw_data[~reject_tables_null].copy()
  
 print(rejected_df.head())
-

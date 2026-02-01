@@ -1,6 +1,6 @@
 ################################################################################################
 
-from app.core.environment import settings
+from app._core._env import settings
 from sqlalchemy import create_engine
 from sqlalchemy.engine import Engine
 

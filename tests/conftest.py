@@ -2,14 +2,14 @@
 
 import logging
 
-from app.core.db import engine
+from app import dbengine
+from tests import configure_logging
 from pytest import fixture
 from sqlalchemy.exc import SQLAlchemyError
-from tests.core.logging import initialize
 
 ################################################################################################
 
-initialize()
+configure_logging()
 
 logger = logging.getLogger(__name__)
 
@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 def connection():
   try:
     logger.info("Establishing Database Connection")
-    with engine.connect() as connection:
+    with dbengine.connect() as connection:
       logger.info("Database Connection Established")
       yield connection
   except SQLAlchemyError:

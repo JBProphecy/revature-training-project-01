@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [{name = "Jack"}, { name = "Nate" }]
+name = "revature-training-project-01"
+version = "0.1.0"
+description = "a data pipeline"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+license = {file = "LICENSE"}
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pylint==4.0.4",
+  "pytest==9.0.2",
+  "pytest-cov==7.0.0",
+  "pytest-xdist==3.8.0"
+]
+
+### pylint ###
+
+[tool.pylint.master]
+ignore = ["tests"]
+ignore-patterns = [".*__init__\\.py$"]
+
+[tool.pylint.format]
+indent-string = "  "
+
+[tool.pylint.messages_control]
+disable = [
+  "bad-indentation",
+  "line-too-long",
+  "missing-module-docstring",
+  "multiple-statements"
+]
+
+### pytest ###
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+pythonpath = "src"
+testpaths = ["tests"]
+addopts = "-ra -q"
