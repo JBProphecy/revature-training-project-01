@@ -17,6 +17,10 @@ classifiers = [
   "Programming Language :: Python :: 3"
 ]
 
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
 [project.optional-dependencies]
 dev = [
   "pylint==4.0.4",

@@ -11,12 +11,11 @@ from sqlalchemy.exc import SQLAlchemyError
 
 configure_logging()
 
-logger = logging.getLogger(__name__)
-
 ################################################################################################
 
 @fixture
 def connection():
+  logger = logging.getLogger(__name__)
   try:
     logger.info("Establishing Database Connection")
     with dbengine.connect() as connection:
