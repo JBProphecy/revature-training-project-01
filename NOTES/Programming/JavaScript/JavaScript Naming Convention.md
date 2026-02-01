@@ -1,0 +1,1 @@
+In JavaScript, the names of variables and functions can neither start with a number nor contain spaces. When the name of a variable or function contains more than one word, the convention is to express that name using camel case, which means the first word in the name is lowercase and then the first letter of each following word is capitalized.

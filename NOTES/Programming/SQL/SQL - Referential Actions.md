@@ -1,0 +1,15 @@
+
+---
+
+- ON DELETE
+- ON UPDATE
+
+---
+
+- CASCADE
+- SET NULL
+- SET DEFAULT
+- NO ACTION
+- RESTRICT
+
+---
