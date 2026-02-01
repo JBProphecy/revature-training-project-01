@@ -15,7 +15,7 @@ def configure():
   root_logger.setLevel(logging.DEBUG)
 
   file_handler = RotatingFileHandler(
-    filename=settings.log_directory_path/settings.tests_log_file_name,
+    filename=settings.log_directory_path/settings.app_log_file_name,
     encoding="utf-8",
     maxBytes=(5 * 1024 * 1024),
     backupCount=4
