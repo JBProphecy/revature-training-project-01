@@ -2,19 +2,20 @@
 
 import logging
 
-from app.core.environment import settings
 from logging.handlers import RotatingFileHandler
+
+from app import settings
 
 ################################################################################################
 
-def initialize():
+def configure():
   settings.log_directory_path.mkdir(exist_ok=True)
 
   root_logger = logging.getLogger()
   root_logger.setLevel(logging.DEBUG)
 
   file_handler = RotatingFileHandler(
-    settings.log_directory_path/settings.tests_log_file_name,
+    filename=settings.log_directory_path/settings.tests_log_file_name,
     encoding="utf-8",
     maxBytes=5 * 1024 * 1024,
     backupCount=4
