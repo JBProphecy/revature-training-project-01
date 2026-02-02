@@ -2,9 +2,9 @@
 
 import logging
 
-from logging.handlers import RotatingFileHandler
-
 from ._env import settings
+
+from logging.handlers import RotatingFileHandler
 
 ################################################################################################
 
@@ -22,7 +22,7 @@ def configure():
   )
   console_handler = logging.StreamHandler()
 
-  file_handler.setLevel(logging.DEBUG)
+  file_handler.setLevel(logging.INFO)
   console_handler.setLevel(logging.DEBUG)
 
   file_formatter = logging.Formatter("[%(asctime)s] [%(name)s] [%(module)s:%(lineno)d] [%(levelname)s] %(message)s")
