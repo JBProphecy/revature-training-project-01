@@ -208,3 +208,6 @@ __marimo__/
 
 # Logs
 logs/
+
+# Root Level SQL
+/sql/
