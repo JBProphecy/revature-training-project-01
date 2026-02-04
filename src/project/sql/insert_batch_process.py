@@ -8,7 +8,7 @@ from uuid import UUID
 
 from project.core import dbengine
 from project.errors import AbstractError
-from project.utils import get_error_name, load_sql
+from project.utils import load_sql
 
 ################################################################################################
 

@@ -4,6 +4,8 @@ import pytest
 
 from typing import Callable
 
+################################################################################################
+
 from project.examples.multiply_digits import (
   multiply_digits,
   multiply_digits_until_single_loop,

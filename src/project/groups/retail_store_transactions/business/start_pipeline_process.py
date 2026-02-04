@@ -21,21 +21,23 @@ def start_pipeline_process():
   logger.info("starting pipeline process")
   try: config = load_configuration()
   except LoadConfigurationError:
-    logger.warning("pipeline process has failed")
+    logger.warning("pipeline process aborted")
     raise
   try: result = authorize_pipeline(config.name)
   except AuthorizePipelineError:
-    logger.warning("pipeline process has failed")
+    logger.warning("pipeline process aborted")
     raise
-  if result.action is None: return
+  if result.action is None:
+    logger.warning("pipeline is running elsewhere :: process aborted")
+    return
   try: initialize_pipeline(config.name, result.action)
   except InitializePipelineError:
-    logger.warning("pipeline process has failed")
+    logger.warning("pipeline process aborted")
     raise
   start_main_process(config)
   try: finalize_pipeline(config.name)
   except FinalizePipelineError:
-    logger.warning("pipeline process has failed")
+    logger.warning("pipeline process aborted")
     raise
   logger.info("pipeline process has been completed")
 

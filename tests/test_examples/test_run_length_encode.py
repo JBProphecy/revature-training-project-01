@@ -2,6 +2,8 @@
 
 import pytest
 
+################################################################################################
+
 from project.examples.run_length_encode import (
   perform_run_length_encoding
 )

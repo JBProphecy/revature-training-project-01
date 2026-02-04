@@ -4,7 +4,7 @@ import logging
 
 from logging.handlers import RotatingFileHandler
 
-from app import settings
+from project.core import settings
 
 ################################################################################################
 

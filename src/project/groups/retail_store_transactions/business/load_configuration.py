@@ -10,11 +10,11 @@ from yaml import YAMLError
 
 from project.models import PipelineConfigurationSettings as Config
 
+from ..constants import CONFIG_FILE_PATH
+
 ################################################################################################
 
 logger = logging.getLogger(__name__)
-
-CONFIG_FILE_PATH = "src/project/groups/retail_store_transactions/config.yaml"
 
 ################################################################################################
 

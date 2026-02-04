@@ -1,7 +1,5 @@
 ################################################################################################
 
-"""
-a collection of scripts that can be executed
-"""
+CONFIG_FILE_PATH = "src/project/groups/retail_store_transactions/config.yaml"
 
 ################################################################################################

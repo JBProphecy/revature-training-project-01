@@ -49,7 +49,7 @@ def authorize_pipeline(pipeline_name: str) -> AuthorizePipelineResult:
           return AuthorizePipelineResult(pipeline_status, InitializePipelineAction.Update)
         case PipelineStatus.Running:
           logger.debug("pipeline %s is running", pipeline_name)
-          logger.info("pipeline %s has been authorized", pipeline_name)
+          logger.warning("pipeline %s has been blocked", pipeline_name)
           return AuthorizePipelineResult(pipeline_status, None)
         case None:
           logger.debug("pipeline %s is absent", pipeline_name)

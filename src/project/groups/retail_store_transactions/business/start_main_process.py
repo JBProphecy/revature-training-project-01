@@ -1,6 +1,7 @@
 ################################################################################################
 
 from logging import getLogger
+from uuid import uuid4
 
 ################################################################################################
 
@@ -11,11 +12,11 @@ from project.sql import (
   update_main_process, UpdateMainProcessError
 )
 
+from project.utils import generate_timestamp
+
 ################################################################################################
 
 from .start_batch_process import start_batch_process
-
-from ..utils import generate_id, generate_timestamp
 
 ################################################################################################
 
@@ -27,7 +28,7 @@ def start_main_process(config: Config) -> None:
   logger.info("starting main process")
   main_process_start_timestamp = generate_timestamp()
   logger.info("main process started at %s", main_process_start_timestamp)
-  main_process_id = generate_id()
+  main_process_id = uuid4()
   logger.debug("main_process_id = %s", main_process_id)
   try: insert_main_process(config.name, main_process_id, main_process_start_timestamp)
   except InsertMainProcessError:

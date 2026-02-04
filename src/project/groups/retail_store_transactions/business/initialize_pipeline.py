@@ -42,6 +42,7 @@ def initialize_pipeline(pipeline_name: str, action: InitializePipelineAction) ->
           result = connection.execute(INSERT_PIPELINE_WITH_NAME_AND_STATUS, { "name": pipeline_name, "status": PipelineStatus.Running })
           if result.rowcount != 1: raise InitializePipelineError(f"{result.rowcount} rows were inserted", f"1 and only 1 row should have been inserted")
     logger.info("pipeline %s has been initialized", pipeline_name)
+    return
   except InitializePipelineError as e:
     logger.error(e.message)
     raise

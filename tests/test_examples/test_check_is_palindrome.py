@@ -4,6 +4,8 @@ import pytest
 
 from typing import Callable
 
+################################################################################################
+
 from project.examples.check_is_palindrome import (
   check_is_palindrome_perfect_match_for_loop,
   check_is_palindrome_perfect_match_while_loop

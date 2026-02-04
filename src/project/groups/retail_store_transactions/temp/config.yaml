@@ -1,0 +1,25 @@
+name: "external-schema-01"
+fields:
+  tuple:
+    - name: "transaction_id"
+      type: "string" # represents a nullable string
+    - name: "customer_id"
+      type: "string" # represents a nullable string
+    - name: "category"
+      type: "string" # represents a nullable string
+    - name: "item"
+      type: "string" # represents a nullable string
+    - name: "price_per_unit"
+      type: "float64" # represents a nullable float
+    - name: "quantity"
+      type: "float64" # represents a nullable float
+    - name: "total_spent"
+      type: "float64" # represents a nullable float
+    - name: "payment_method"
+      type: "string" # represents a nullable string
+    - name: "location"
+      type: "string" # represents a nullable string
+    - name: "transaction_date"
+      type: "string" # represents a nullable string
+    - name: "discount_applied"
+      type: "boolean" # represents a nullable boolean
