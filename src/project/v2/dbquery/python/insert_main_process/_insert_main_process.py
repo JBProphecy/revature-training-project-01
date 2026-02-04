@@ -4,7 +4,7 @@ from uuid import UUID
 
 from project.v2.abs.errors import AbstractError
 from project.v2.core.dbengine import engine
-from project.v2.dbsql.helpers import load_sql_from_file
+from project.v2.dbquery.helpers import load_sql_from_file
 
 logger = getLogger(__name__)
 
