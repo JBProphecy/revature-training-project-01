@@ -4,7 +4,7 @@ import yaml
 from pathlib import Path
 from typing import Type, TypeVar
 
-from project.v2.errors.abstract_error import AbstractError
+from project.v2.abs.errors import AbstractError
 
 logger = logging.getLogger(__name__)
 
