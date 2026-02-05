@@ -1,5 +1,5 @@
 from project.utils import load_config_from_yaml
-from project.sandbox.load_external_data import load_external_data
+from project.utils import load_external_data
 
 CONFIG_FILE_PATH = "config/wildfire_global.yaml"
 config = load_config_from_yaml(CONFIG_FILE_PATH)

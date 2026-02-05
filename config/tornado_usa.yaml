@@ -1,5 +1,5 @@
 sources:
-  - path: "revature-training-project-01/data/raw/tornado_usa.csv"
+  - path: "data/tornado_usa.csv"
     format: "csv"
     columns:
       yr: "year"

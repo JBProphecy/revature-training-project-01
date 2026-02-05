@@ -1,10 +1,10 @@
 sources:
-  - path: "revature-training-project-01/data/wildfire_global.json"
+  - path: "data/wildfire_global.json"
     format: "json"
     columns:
       Country: "country"
       Year: "year"
-      Mont: "month"
+      Month: "month"
       Region: "region"
       Cause: "cause"
       Fires_Count: "recorded_fires_count"
