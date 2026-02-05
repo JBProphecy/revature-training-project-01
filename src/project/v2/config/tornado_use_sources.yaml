@@ -1,0 +1,13 @@
+- path: ""
+  format: "csv"
+  columns:
+    yr: "year"
+    mo: "month"
+    dy: "day"
+    date: "date"
+    st: "state"
+    mag: "magnitude"
+    inj: "injury_count"
+    fat: "fatality_count"
+    slat: "latitude"
+    slon: "longitude"
