@@ -26,20 +26,3 @@ CREATE TABLE tornado_usa (
   longitude double precision NOT NULL,
   CONSTRAINT tornado_usa_pkey PRIMARY KEY (id)
 );
-
---Hello
-
-CREATE TABLE tornado_usabob (
-  id integer GENERATED ALWAYS AS IDENTITY,
-  year integer NOT NULL,
-  month integer NOT NULL,
-  day integer NOT NULL,
-  date date NOT NULL,
-  state integer NOT NULL,
-  magnitude integer NOT NULL,
-  injury_count integer NOT NULL,
-  fatality_count integer NOT NULL,
-  latitude double precision NOT NULL,
-  longitude double precision NOT NULL,
-  CONSTRAINT tornado_usa_pkey PRIMARY KEY (id)
-);
