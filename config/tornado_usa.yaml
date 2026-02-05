@@ -1,6 +1,6 @@
 sources:
   - path: "revature-training-project-01/data/raw/tornado_usa.csv"
-    format: "cv"
+    format: "csv"
     columns:
       yr: "year"
       mo: "month"

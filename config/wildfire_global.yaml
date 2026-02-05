@@ -9,6 +9,6 @@ sources:
       Cause: "cause"
       Fires_Count: "recorded_fires_count"
       Burned_Area_Ha: "burned_area_hectares"
-      Temperature_C: "temperatur_celsius"
+      Temperature_C: "temperature_celsius"
       Humidity_Percent: "humidity_percent"
       Wind_Speed_kmh: "wind_speed_kmh"
