@@ -5,7 +5,7 @@ from sqlalchemy.exc import MultipleResultsFound, NoResultFound, SQLAlchemyError
 from sqlalchemy.sql import text
 
 from project.v2.core.dbengine import engine
-from project.v2.logging import configure as configure_logging
+from project.v2.logging import configure as 
 
 logger = logging.getLogger(__name__)
 inspector = inspect(engine)
