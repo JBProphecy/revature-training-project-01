@@ -1,5 +1,5 @@
 from sqlalchemy.engine import Engine, create_engine
-from ._settings import settings
+from ._env import settings
 
 def build_engine() -> Engine:
   host = settings.db_host
@@ -10,6 +10,6 @@ def build_engine() -> Engine:
   url = f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{name}"
   return create_engine(url, pool_pre_ping=True, future=True)
 
-engine = build_engine()
+dbengine = build_engine()
 
-__all__ = ["engine"]
+__all__ = ["dbengine"]

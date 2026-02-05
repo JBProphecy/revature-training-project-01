@@ -1,9 +1,9 @@
 import logging
 
 from logging.handlers import RotatingFileHandler
-from ._settings import settings
+from ._env import settings
 
-def configure():
+def configure_logging():
   settings.log_directory_path.mkdir(exist_ok=True)
 
   root_logger = logging.getLogger()
@@ -29,4 +29,4 @@ def configure():
   root_logger.addHandler(file_handler)
   root_logger.addHandler(console_handler)
 
-__all__ = ["configure"]
+__all__ = ["configure_logging"]

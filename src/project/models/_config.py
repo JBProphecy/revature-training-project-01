@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from ._abstract_enums import AbstractStringEnum
 
 class Config(BaseModel):
+  path: str | None = None
   sources: list[Source]
   class Source(BaseModel):
     path: str
