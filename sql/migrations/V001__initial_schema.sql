@@ -19,7 +19,7 @@ CREATE TABLE tornado_usa (
   month integer NOT NULL,
   day integer NOT NULL,
   date date NOT NULL,
-  state integer NOT NULL,
+  state text NOT NULL,
   magnitude integer NOT NULL,
   injury_count integer NOT NULL,
   fatality_count integer NOT NULL,
