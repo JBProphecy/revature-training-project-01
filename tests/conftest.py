@@ -2,10 +2,11 @@
 
 import logging
 
-from app import dbengine
 from tests import configure_logging
 from pytest import fixture
 from sqlalchemy.exc import SQLAlchemyError
+
+from project.core import dbengine
 
 ################################################################################################
 
