@@ -6,7 +6,8 @@ CREATE TABLE wildfire_global (
   region text NOT NULL,
   cause text NOT NULL,
   recorded_fires_count integer NOT NULL,
-  burned_area_hectares integer NULL,
+  burned_area_hectares integer NOT NULL,
+  temperature_celsius integer NOT NULL,
   humidity_percent integer NOT NULL,
   wind_speed_kmh integer NOT NULL,
   CONSTRAINT wildfire_global_id PRIMARY KEY (id)
@@ -22,7 +23,11 @@ CREATE TABLE tornado_usa (
   magnitude integer NOT NULL,
   injury_count integer NOT NULL,
   fatality_count integer NOT NULL,
-  latitude double precision NOT NULL,
-  longitude double precision NOT NULL,
+  latitude_start double precision NOT NULL,
+  latitude_end double precision NOT NULL,
+  longitude_start double precision NOT NULL,
+  longitude_end double precision NOT NULL,
+  length_miles double precision NOT NULL,
+  width_yards integer NOT NULL,
   CONSTRAINT tornado_usa_pkey PRIMARY KEY (id)
 );

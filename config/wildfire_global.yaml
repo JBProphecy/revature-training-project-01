@@ -1,0 +1,14 @@
+sources:
+  - path: "revature-training-project-01/data/raw/wildfire_global.json"
+    format: "json"
+    columns:
+      Country: "country"
+      Year: "year"
+      Mont: "month"
+      Region: "region"
+      Cause: "cause"
+      Fires_Count: "recorded_fires_count"
+      Burned_Area_Ha: "burned_area_hectares"
+      Temperature_C: "temperatur_celsius"
+      Humidity_Percent: "humidity_percent"
+      Wind_Speed_kmh: "wind_speed_kmh"
