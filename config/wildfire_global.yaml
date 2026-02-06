@@ -1,0 +1,16 @@
+accepted: "wildfire_global"
+rejected: "wildfire_global_rejects"
+sources:
+  - path: "data/wildfire_global.json"
+    format: "json"
+    columns:
+      Country: "country"
+      Year: "year"
+      Month: "month"
+      Region: "region"
+      Cause: "cause"
+      Fires_Count: "recorded_fires_count"
+      Burned_Area_Ha: "burned_area_hectares"
+      Temperature_C: "temperature_celsius"
+      Humidity_Percent: "humidity_percent"
+      Wind_Speed_kmh: "wind_speed_kmh"
