@@ -1,9 +1,6 @@
 import pandas as pd
-from project.cleaning._clean_tornado import clean_tornado_usa
 
 def validate_tornado_usa(df):
-    df = clean_tornado_usa(df)
-
     valid_rows = []
     rejected_rows = []
 

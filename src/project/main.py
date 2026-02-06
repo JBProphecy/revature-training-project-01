@@ -1,5 +1,5 @@
 import logging
-from project.utils._ingest import ingest
+from project.utils.ingest import ingest
 
 
 def main() -> None:

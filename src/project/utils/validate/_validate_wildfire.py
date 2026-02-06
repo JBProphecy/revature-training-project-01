@@ -1,9 +1,6 @@
 import pandas as pd
-from project.cleaning._clean_wildfire import clean_wildfire
 
 def validate_wildfire(df):
-    df = clean_wildfire(df)
-
     valid_rows = []
     rejected_rows = []
 

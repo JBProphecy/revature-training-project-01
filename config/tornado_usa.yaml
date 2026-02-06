@@ -1,3 +1,5 @@
+accepted: "tornado_usa"
+rejected: "tornado_usa_rejects"
 sources:
   - path: "data/tornado_usa.csv"
     format: "csv"

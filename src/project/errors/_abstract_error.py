@@ -1,4 +1,4 @@
-from project.utils import format_double_arguments
+from project.utils.helpers import format_double_arguments
 
 class AbstractError(Exception):
   def __init__(self, *args, **kwargs):
