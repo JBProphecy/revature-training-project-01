@@ -5,10 +5,10 @@ import pandas as pd
 
 def tornado_most_events_by_month(engine: Engine) -> pd.DataFrame:
     query = text("""
-        SELECT year, month, COUNT(*) AS tornado_count
+        SELECT month, COUNT(*) AS tornado_count
         FROM tornado_usa_accepted_final
-        GROUP BY year, month
-        ORDER BY year, month
+        GROUP BY month
+        ORDER BY month
     """)
     return pd.read_sql(query, engine)
 
